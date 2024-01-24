@@ -10,7 +10,7 @@ function Header() {
         align="center"
         justify={['center', 'flex-start']}
       >
-        <Image src={Logo} alt='' boxSize={['200px', '250px']} maxW="100%" />
+        <Image src={Logo} alt='' boxSize={['200px', '250px']} maxW="100%"  />
         <Menu />
       </Flex>
     </Box>

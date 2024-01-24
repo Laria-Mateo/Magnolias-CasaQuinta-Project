@@ -50,11 +50,18 @@ const Secciones = () => {
 
 
 
-        <Box id="seccion2" h="auto" bg="#FDEDEC" boxShadow="dark-lg" m={'15px'} rounded={4} mt={0} p={4} position="relative" textAlign={'center'} >
+        <Box id="seccion2" h="auto" bg="#FDEDEC" boxShadow="dark-lg" m={'15px'} rounded={4} mt={0} p={4} position="relative" textAlign={'center'}  >
           <Heading size="lg" fontSize="40px" p={'10px'} >
             Nuestros Espacios
           </Heading>
-          <Box boxSize={['300px', '400px']} maxW="100%" margin="auto" textAlign="center" mb={4} h="400px" overflow="hidden" >
+          <Box boxSize={['300px', '400px']}
+            maxW="100%"
+            margin="auto"
+            textAlign="center"
+            mb={4}
+            h="430px"
+            overflow="hidden"
+            border="3px solid black" >
 
 
             <Box id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" boxShadow="dark-lg"  >
