@@ -61,7 +61,9 @@ const Secciones = () => {
             mb={4}
             h="430px"
             overflow="hidden"
-            border="3px solid black" >
+            border="3px solid black" 
+            border={{ base: 'none', md: '3px solid black' }} // Sin borde en pantallas pequeñas, borde en pantallas medianas y más grandes
+            >
 
 
             <Box id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" boxShadow="dark-lg"  >
