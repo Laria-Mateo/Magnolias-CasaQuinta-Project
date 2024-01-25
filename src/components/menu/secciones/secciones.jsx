@@ -27,7 +27,7 @@ const Secciones = () => {
   return (
     <ChakraProvider theme={theme}>
       <>
-        <Box id="seccion1" h="auto" bg="#FDEDEC" boxShadow="dark-lg" m={'15px'} rounded={4} mt={0} textAlign="center">
+        <Box id="seccion1" h="auto" bg="#FDEDEC" boxShadow="dark-lg" m={'15px'} rounded={4} mt={0} textAlign="center" mt={"15px"}>
           <Heading size="lg" fontSize="40px" textAlign={'center'} p={'10px'} >
             Sobre Nosotros
           </Heading>
