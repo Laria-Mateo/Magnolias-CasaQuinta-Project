@@ -40,44 +40,42 @@ const Menu = () => {
 
   return (
     <>
-      <VStack align="center">
-        <Box display={{ base: 'block', md: 'none' }}>
-          <Button onClick={toggleMenu} bg="#D6C4C0" mt={'15px'}>
-            Menú
-          </Button>
-        </Box>
-        <Box display={{ base: 'none', md: 'block' }}>
-          <Flex>
-            <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion1")}>
-              Sobre nosotros
-            </Box>
-            <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion2")}>
-              Nuestros Espacios
-            </Box>
-            <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion3")}>
-              Sección 3
-            </Box>
-          </Flex>
-        </Box>
+    <VStack align="center">
+      <Box display={{ base: 'block', md: 'none' }}>
 
-        <Collapse in={isOpen} animateOpacity>
-          <Flex
-            direction="column"
-            align={{ base: 'flex-start', md: 'center' }}
-            mt={{ base: 4, md: 0 }}
-          >
-            <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion1")}>
-              Sobre nosotros
-            </Box>
-            <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion2")}>
-              Nuestros Espacios
-            </Box>
-            <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion3")}>
-              Sección 3
-            </Box>
-          </Flex>
-        </Collapse>
-      </VStack>
+      </Box>
+      <Box display={{ base: 'none', md: 'block' }}>
+        <Flex>
+          <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion1")} color="white">
+            Sobre nosotros
+          </Box>
+          <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion2")} color="white">
+            Nuestros Espacios
+          </Box>
+          <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion3")} color="white">
+            Sección 3
+          </Box>
+        </Flex>
+      </Box>
+
+      <Collapse in={isOpen} animateOpacity>
+        <Flex
+          direction="column"
+          align={{ base: 'flex-start', md: 'center' }}
+          mt={{ base: 4, md: 0 }}
+        >
+          <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion1")} color="white">
+            Sobre nosotros
+          </Box>
+          <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion2")} color="white">
+            Nuestros Espacios
+          </Box>
+          <Box m={4} cursor="pointer" onClick={() => handleItemClick("seccion3")} color="white">
+            Sección 3
+          </Box>
+        </Flex>
+      </Collapse>
+    </VStack>
     </>
   );
 };
